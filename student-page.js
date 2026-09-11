@@ -22,7 +22,7 @@
     key: 'sb_publishable_YS4zJgl-oPOL2GRKvhNqoQ_uD85_ZEO',
     channel: 'sdcc-reactions-v1',
 
-    defaultCooldownMs: 350,
+    defaultCooldownMs: 50,
 
     // Per-reaction overrides. Keys match data-react values.
     cooldowns: {
