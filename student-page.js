@@ -26,7 +26,7 @@
 
     // Per-reaction overrides. Keys match data-react values.
     cooldowns: {
-      holymoly: 30 * 60 * 1000,   // 30 minutes
+      holymoly: 1 * 60 * 1000,   // 30 minutes
     },
   };
 
