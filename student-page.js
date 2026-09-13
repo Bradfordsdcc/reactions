@@ -92,7 +92,7 @@
     } else {
       el.classList.remove('is-cooling');
       el.style.setProperty('--cooldown', '0');
-      if (timerEl) timerEl.textContent = '';
+      if (timerEl) timerEl.textContent = timerEl.dataset.rxLabel || '';
     }
   }
 
@@ -101,6 +101,11 @@
 
   buttons.forEach((el) => {
     const icon = el.getAttribute('data-react');
+
+    const labelEl = el.querySelector('[data-react-timer]');
+    if (labelEl && labelEl.dataset.rxLabel === undefined) {
+      labelEl.dataset.rxLabel = labelEl.textContent;
+    }
 
     el.addEventListener('pointerdown', (e) => {
       e.preventDefault();
